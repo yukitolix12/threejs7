@@ -35,6 +35,8 @@ document.body.appendChild(renderer.domElement);
 const particlesGeometry = new THREE.BufferGeometry();
 const count = 1000;
 
+const positionArray = new Float32Array(count * 3);
+
 //マウス操作
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
