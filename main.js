@@ -4,3 +4,9 @@ import GUI from "https://cdn.jsdelivr.net/npm/lil-gui@0.15/+esm";
 
 //UIデバッグ
 const gui = new GUI();
+
+//サイズ
+const sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight,
+};
