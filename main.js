@@ -33,6 +33,7 @@ document.body.appendChild(renderer.domElement);
  * パーティクルを作ってみよう
  */
 const particlesGeometry = new THREE.BufferGeometry();
+const count = 1000;
 
 //マウス操作
 const controls = new OrbitControls(camera, renderer.domElement);
