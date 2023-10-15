@@ -37,6 +37,10 @@ const count = 1000;
 
 const positionArray = new Float32Array(count * 3);
 
+for(let i=0; i < count * 3; i++){
+    positionArray[i] = Math.random();
+}
+
 //マウス操作
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
