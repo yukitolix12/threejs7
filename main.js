@@ -28,3 +28,13 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(window.devicePixelRatio);
 document.body.appendChild(renderer.domElement);
+
+/**
+ * パーティクルを作ってみよう
+ */
+
+//マウス操作
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+window.addEventListener("resize", onWindowResize);
