@@ -13,3 +13,11 @@ const sizes = {
 
 //シーン
 const scene = new THREE.Scene();
+
+//カメラ
+const camera = new THREE.PerspectiveCamera(
+    75,
+    sizes.width / sizes.height,
+    0.1,
+    100
+);
