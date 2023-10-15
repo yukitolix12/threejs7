@@ -38,3 +38,5 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
 window.addEventListener("resize", onWindowResize);
+
+const clock = new THREE.Clock();
