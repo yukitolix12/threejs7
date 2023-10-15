@@ -57,3 +57,5 @@ function onWindowResize() {
     camera.aspect = innerWidth / innerHeight;
     camera.updateProjectionMatrix();
 }
+
+animate();
