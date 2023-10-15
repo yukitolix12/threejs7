@@ -50,3 +50,10 @@ function animate() {
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
 }
+
+//ブラウザのリサイズに対応
+function onWindowResize() {
+    renderer.setSize(innerWidth, innerHeight);
+    camera.aspect = innerWidth / innerHeight;
+    camera.updateProjectionMatrix();
+}
