@@ -45,4 +45,8 @@ function animate() {
     const elapsedTime = clock.getElapsedTime();
 
     controls.update();
+
+    //レンダリング
+    renderer.render(scene, camera);
+    requestAnimationFrame(animate);
 }
