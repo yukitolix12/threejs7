@@ -32,6 +32,7 @@ document.body.appendChild(renderer.domElement);
 /**
  * パーティクルを作ってみよう
  */
+//ジオメトリー
 const particlesGeometry = new THREE.BufferGeometry();
 const count = 1000;
 
@@ -44,6 +45,9 @@ for(let i=0; i < count * 3; i++){
 particlesGeometry.setAttribute("position",
 new THREE.BufferAttribute(positionArray, 3)
 );
+
+//マテリアル
+const pointsMaterial = new THREE.PointsMaterial();
 
 //マウス操作
 const controls = new OrbitControls(camera, renderer.domElement);
