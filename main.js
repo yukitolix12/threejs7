@@ -45,6 +45,7 @@ const colorArray = new Float32Array(count * 3);
 
 for(let i=0; i < count * 3; i++){
     positionArray[i] = (Math.random() - 0.5) * 10;
+    colorArray[i] = Math.random();
 }
 
 particlesGeometry.setAttribute(
