@@ -38,7 +38,7 @@ document.body.appendChild(renderer.domElement);
  */
 //ジオメトリー
 const particlesGeometry = new THREE.BufferGeometry();
-const count = 1000;
+const count = 10000;
 
 const positionArray = new Float32Array(count * 3);
 const colorArray = new Float32Array(count * 3);
