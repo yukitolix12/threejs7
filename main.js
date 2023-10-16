@@ -14,6 +14,9 @@ const sizes = {
 //シーン
 const scene = new THREE.Scene();
 
+//座標軸の追加
+const axesHelper = new THREE.AxesHelper(5);
+
 //カメラ
 const camera = new THREE.PerspectiveCamera(
     75,
