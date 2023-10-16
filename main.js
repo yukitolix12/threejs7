@@ -53,6 +53,11 @@ particlesGeometry.setAttribute(
     new THREE.BufferAttribute(positionArray, 3)
 );
 
+particlesGeometry.setAttribute(
+    "color",
+    new THREE.BufferAttribute(colorArray, 3)
+);
+
 //マテリアル
 const pointsMaterial = new THREE.PointsMaterial({
     size: 0.03,
