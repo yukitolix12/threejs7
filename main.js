@@ -47,7 +47,9 @@ new THREE.BufferAttribute(positionArray, 3)
 );
 
 //マテリアル
-const pointsMaterial = new THREE.PointsMaterial();
+const pointsMaterial = new THREE.PointsMaterial({
+    size: 0.05,
+});
 
 //マウス操作
 const controls = new OrbitControls(camera, renderer.domElement);
