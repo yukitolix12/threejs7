@@ -43,7 +43,7 @@ const count = 1000;
 const positionArray = new Float32Array(count * 3);
 
 for(let i=0; i < count * 3; i++){
-    positionArray[i] = Math.random();
+    positionArray[i] = Math.random() - 0.5;
 }
 
 particlesGeometry.setAttribute(
