@@ -61,6 +61,7 @@ particlesGeometry.setAttribute(
 //マテリアル
 const pointsMaterial = new THREE.PointsMaterial({
     size: 0.03,
+    vertexColors: true,
 });
 
 //メッシュ化
