@@ -51,6 +51,9 @@ const pointsMaterial = new THREE.PointsMaterial({
     size: 0.05,
 });
 
+//メッシュ化
+const particles = new THREE.Points(THREE.particlesGeometry, pointsMaterial);
+
 //マウス操作
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
