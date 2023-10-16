@@ -42,8 +42,9 @@ for(let i=0; i < count * 3; i++){
     positionArray[i] = Math.random();
 }
 
-particlesGeometry.setAttribute("position",
-new THREE.BufferAttribute(positionArray, 3)
+particlesGeometry.setAttribute(
+    "position",
+    new THREE.BufferAttribute(positionArray, 3)
 );
 
 //マテリアル
@@ -52,7 +53,7 @@ const pointsMaterial = new THREE.PointsMaterial({
 });
 
 //メッシュ化
-const particles = new THREE.Points(THREE.particlesGeometry, pointsMaterial);
+const particles = new THREE.Points(particlesGeometry, pointsMaterial);
 
 scene.add(particles);
 
