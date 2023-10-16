@@ -42,7 +42,8 @@ for(let i=0; i < count * 3; i++){
 }
 
 particlesGeometry.setAttribute("position",
-)
+new THREE.BufferAttribute(positionArray, 3)
+);
 
 //マウス操作
 const controls = new OrbitControls(camera, renderer.domElement);
